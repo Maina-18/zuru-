@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="animated-bg"></div>
+    <div class="bg-img"></div>
     
     <header>
         <nav>
@@ -19,13 +19,26 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
+        <!--<section class="hero">-->
+            <div class="animated-network-container" id="networkContainer">
+        <div class="network-grid" id="networkGrid"></div>
+        <div class="floating-particles" id="particles"></div>
+        
+<!-- Demo content - remove this for pure background -->
+        <div class="demo-content">
+            <div class="demo-text">
+                <h2>Zuru Surf by Veenet Africa</h2>
+                <p>Affordable hotspot hubs for the unconnected</p>
+                <p>Infinitous Connectivity, one community at a time</p>
+            </div>
+        </div>
+    </div>
+           <!-- <div class="hero-content">
                 <h1>Zuru Surf by Veenet Africa</h1>
                 <p class="subtitle">Affordable hotspot hubs for the unconnected</p>
                 <p class="tagline">Infinitous Connectivity, one community at a time</p>
             </div>
-        </section>
+        </section>-->
 
         <section class="about">
             <div class="container">
@@ -63,7 +76,7 @@
 
         <section class="pricing">
             <div class="container">
-                <h2>Choose Your Plan</h2>
+                <h2>Our Plans</h2>
                
                 <div class="pricing-grid">
                     <div class="pricing-card popular">
@@ -75,7 +88,6 @@
                            <li><i class="fas fa-gauge"></i> Unlimited Speed</li>
                            <li><i class="fas fa-infinity"></i> Unlimited Data</li>
                         </ul>
-                          <a href="#" class="choose-btn">Choose Plan</a>
                     </div>
 
                     <div class="pricing-card">
@@ -86,7 +98,6 @@
                             <li><i class="fas fa-tachometer-alt"></i>Unlimited Speed</li>
                             <li><i class="fas fa-infinity"></i>Unlimited Data</li>
                         </ul>
-                           <a href="#" class="choose-btn">Choose Plan</a>
                     </div>
 
                     <div class="pricing-card">
@@ -97,7 +108,6 @@
                              <li><i class="fas fa-gauge"></i> Unlimited Speed</li>
                            <li><i class="fas fa-infinity"></i> Unlimited Data</li>
                         </ul>
-                           <a href="#" class="choose-btn">Choose Plan</a>
                     </div>
 
                     <div class="pricing-card">
@@ -108,7 +118,6 @@
                             <li><i class="fas fa-gauge"></i> Unlimited Speed</li>
                            <li><i class="fas fa-infinity"></i> Unlimited Data</li>
                         </ul>
-                           <a href="#" class="choose-btn">Choose Plan</a>
                     </div>
                 </div>
             </div>
@@ -133,9 +142,9 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Powered by <a href="https://veenet.africa" target="_blank" style="color: #4CAF50; text-decoration: none;">Veenet Africa</a>.</p>
+            <p>&copy; 2025 Powered by <a href="https://veenet.africa" target="_blank" style="color: #4CAF50; text-decoration: none;">Veenet Africa</a>.</p>
         </div>
     </footer>
-
+<script src="./app.js"></script>
 </body>
 </html>

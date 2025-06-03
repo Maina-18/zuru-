@@ -18,7 +18,7 @@
 
 
     
-        .animated-bg {
+        .bg-img {
             position: fixed;
             top: 0;
             left: 0;
@@ -49,7 +49,173 @@
             padding: 0 2rem;
         }
 
-        /* Hero Section */
+/* ANIMATED NETWORK BACKGROUND - COMPLETE PACKAGE */
+        /* Copy this entire CSS section to use elsewhere */
+        
+        .animated-network-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background: radial-gradient(ellipse at center, #1a1a3e 0%, #0a0a1a 70%);
+        }
+
+        .network-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+        }
+
+        .grid-line {
+            position: absolute;
+            background: linear-gradient(90deg, transparent, #15de44, transparent);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .grid-line.horizontal {
+            width: 100%;
+            height: 2px;
+        }
+
+        .grid-line.vertical {
+            width: 2px;
+            height: 100%;
+        }
+
+        .connection-node {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background:#15de44 ;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #15de44;
+            animation: glow 2s ease-in-out infinite alternate;
+            transition: all 0.3s ease;
+        }
+
+        .floating-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #15de44;
+            border-radius: 50%;
+            animation: float 6s linear infinite;
+        }
+
+        /* Pulsing wave effect */
+        .wave-ring {
+            position: absolute;
+            border: 2px solid #15de44 ;
+            border-radius: 50%;
+            animation: wave-expand 3s ease-out infinite;
+        }
+
+        /* Data stream lines */
+        .data-stream {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #15de44, transparent);
+            animation: stream-flow 4s linear infinite;
+        }
+
+        /* KEYFRAME ANIMATIONS */
+        @keyframes pulse {
+            0%, 100% { 
+                opacity: 0.3;
+                filter: brightness(1);
+            }
+            50% { 
+                opacity: 0.8;
+                filter: brightness(1.5);
+            }
+        }
+
+        @keyframes glow {
+            0% { 
+                box-shadow: 0 0 20px #15de44;
+                transform: scale(1);
+            }
+            100% { 
+                box-shadow: 0 0 40px #15de44, 0 0 60px #15de44;
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes wave-expand {
+            0% {
+                transform: scale(0.5);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        @keyframes stream-flow {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% {
+                transform: translateX(100vw);
+                opacity: 0;
+            }
+        }
+
+        /* Interactive hover effects */
+        .connection-node:hover {
+            animation-play-state: paused;
+            box-shadow: 0 0 60px #15de44 !important;
+            transform: scale(1.5) !important;
+        }
+
+        /* Demo content styling */
+        .demo-content {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .demo-text {
+            background: rgba(0,0,0,0.3);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Hero Section 
         .hero {
             min-height: 100vh;
             display: flex;
@@ -173,7 +339,7 @@
             font-size: 2.5rem;
             text-align: center;
             margin-bottom: 3rem;
-            color: #333;
+            color:white;
         }
 
         .pricing-grid {
