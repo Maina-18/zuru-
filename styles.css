@@ -191,53 +191,47 @@
         /* Interactive hover effects */
         .connection-node:hover {
             animation-play-state: paused;
-            box-shadow: 0 0 60px #15de44 !important;
-            transform: scale(1.5) !important;
+            box-shadow: 0 0 60px #15de44;
+            transform: scale(1.5);
         }
 
         .hero-content {
-            position: relative;
-            padding: 0 2rem;
-            z-index: 1;
+            /*position: relative;
+            /*background: url("blob:https://web.whatsapp.com/f718aad7-f800-4f2f-8134-e1832f3bec54");
+            background: url('https://media.istockphoto.com/id/2153478836/photo/digital-technology-internet-network-connection-big-data-digital-marketing-iot-internet-of.jpg?s=2048x2048&w=is&k=20&c=RoliWvgeuey5aQP7g2f_whOV7r-vmnt6bd5JHjQ_hKc=');*/
+            background: url('https://media.istockphoto.com/id/1024298866/photo/global-business-and-trade-concept.jpg?s=612x612&w=0&k=20&c=30fh_Mam1SiMvFzM68lwZPG5kZlRy7DOIbOUePIl3M0=');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             color: white;
-            text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .hero-text {
-            background: rgba(0,0,0,0.3);
-            padding: 2rem;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
+
+            padding: 40px 20px;
+            width: 75%;
+            text-align: center;
+            border: none;
+            color: #0a0a1a;
         }
         .hero h2 {
             font-size: 3.5rem;
-            margin-bottom: 1rem;
-            opacity: 0;
-            animation: slideUp 1s ease-out 0.5s forwards;
+            font-weight: bold;
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
-
-        .hero .subtitle {
+        .hero-text p{
             font-size: 1.5rem;
-            margin-bottom: 1rem;
-            opacity: 0;
-            animation: slideUp 1s ease-out 0.7s forwards;
-            color: #e0e7ff;
-        }
-        .hero .tagline {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0;
-            animation: slideUp 1s ease-out 0.9s forwards;
-            font-style: italic;
-            color: #c7d2fe;
+            font-weight: bold;
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
 
-        @keyframes slideUp {
+           @keyframes slideUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
@@ -249,59 +243,7 @@
         }
 
 
-        /*Hero Section 
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0 2rem;
-            position: relative;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            color: white;
-            z-index: 1;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            opacity: 0;
-            animation: slideUp 1s ease-out 0.5s forwards;
-        }
-
-        .hero .subtitle {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            opacity: 0;
-            animation: slideUp 1s ease-out 0.7s forwards;
-            color: #e0e7ff;
-        }
-
-        .hero .tagline {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0;
-            animation: slideUp 1s ease-out 0.9s forwards;
-            font-style: italic;
-            color: #c7d2fe;
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* About Section */
+              /* About Section */
         .about {
             padding: 5rem 2rem;
             background: rgba(255, 255, 255, 0.95);
